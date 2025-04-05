@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_orders/FoodPage/food_page.dart';
+import 'package:food_orders/CartPage/cart_page.dart';
+
 import 'package:food_orders/HomePage/home_page.dart';
 
 class MainScreen extends StatefulWidget {
@@ -11,7 +12,7 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   int currentIndex = 0;
-  final screen = [HomePage()];
+  final screen = [HomePage(), CartPage()];
   @override
   Widget build(BuildContext context) {
     final itemBars = [
@@ -52,7 +53,7 @@ class _MainScreenState extends State<MainScreen> {
     );
 
     return Scaffold(
-      body: Center(child: screen.elementAtOrNull(currentIndex)),
+      body: Center(child: screen.elementAt(currentIndex)),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           boxShadow: [
