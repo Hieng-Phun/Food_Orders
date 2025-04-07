@@ -32,7 +32,8 @@ class WelcomePage extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Expanded(
+      body: SizedBox(
+        width: MediaQuery.of(context).size.width,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

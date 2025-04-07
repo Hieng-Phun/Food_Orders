@@ -8,6 +8,7 @@ class SignUpPage extends StatelessWidget {
   void submit(context) {
     if (keyForm.currentState != null && keyForm.currentState!.validate()) {
       print("Login is successfully.");
+      Navigator.pushNamed(context, '/homePage');
     } else {
       print("Login is failed.");
     }

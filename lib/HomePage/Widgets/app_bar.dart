@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 final appBar = AppBar(
   backgroundColor: Colors.white,
+  scrolledUnderElevation: 0,
   title: Row(
     children: [
       CircleAvatar(backgroundColor: const Color.fromARGB(255, 190, 190, 190)),

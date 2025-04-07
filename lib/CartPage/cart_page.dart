@@ -15,7 +15,7 @@ class _CartPageState extends State<CartPage> {
       centerTitle: true,
       leading: IconButton(
         onPressed: () {
-          Navigator.pop(context);
+          Navigator.pushReplacementNamed(context, '/homePage');
         },
         icon: Icon(Icons.arrow_back_ios),
       ),
